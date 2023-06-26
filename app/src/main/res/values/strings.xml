@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Swiggy</string>
+    <string name="enter_your_mobile_number_to_get_otp">Enter your mobile number to get OTP</string>
+    <string name="wellcome_to_swiggy">Wellcome to Swiggy</string>
+    <string name="button">Button</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

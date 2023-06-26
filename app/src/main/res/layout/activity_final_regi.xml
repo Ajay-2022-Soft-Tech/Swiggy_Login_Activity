@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".finalRegi">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="Requried"
+        app:helperTextTextColor="#FF0000"
+        android:layout_margin="15dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/greybackground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        app:helperText="Requried"
+        app:helperTextTextColor="#FF0000"
+        android:layout_margin="15dp"
+        android:background="@drawable/greybackground"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText,VisualLintTextFieldSize,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_password_24"
+        app:helperText="Requried"
+        app:helperTextTextColor="#FF0000"
+        android:layout_margin="15dp"
+        app:endIconMode="password_toggle"
+        android:background="@drawable/greybackground"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#757575"
+            tools:ignore="HardcodedText,VisualLintTextFieldSize,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orange"
+        android:clickable="true"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:focusable="true" />
+
+</LinearLayout>
